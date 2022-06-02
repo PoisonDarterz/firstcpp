@@ -2,12 +2,16 @@
 //
 
 #include <iostream>
+#include <iomanip>
+#include <string>
 
-int main()
+
+int firstcpp()
 {
-    std::cout << "Hello World!\n";
+    std::cout << "Hello World!" << std::endl;
     return 0;
 }
+
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
 // Debug program: F5 or Debug > Start Debugging menu
