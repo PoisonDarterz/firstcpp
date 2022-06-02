@@ -6,8 +6,7 @@
 #include <string>
 
 
-int firstcpp()
-{
+int firstcpp() {
     std::cout << "Hello World!" << std::endl;
     return 0;
 }
