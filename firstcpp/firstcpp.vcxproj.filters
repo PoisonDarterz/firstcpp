@@ -24,5 +24,14 @@
     <ClCompile Include="q22_4.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="q31_2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="q31_3.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="temperature.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

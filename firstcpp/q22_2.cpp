@@ -1,6 +1,5 @@
 #include <iostream>
 #include <iomanip>
-#include <string>
 
 int q22_2() {
     std::cout << "Enter temperature in Celsius: ";

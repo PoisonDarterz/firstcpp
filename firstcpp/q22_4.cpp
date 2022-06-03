@@ -1,6 +1,5 @@
 #include <iostream>
 #include <iomanip>
-#include <string>
 
 int q22_4() {
     double array[3];

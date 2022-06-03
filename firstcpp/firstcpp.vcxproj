@@ -130,6 +130,9 @@
     <ClCompile Include="firstcpp.cpp" />
     <ClCompile Include="q22_2.cpp" />
     <ClCompile Include="q22_4.cpp" />
+    <ClCompile Include="q31_2.cpp" />
+    <ClCompile Include="q31_3.cpp" />
+    <ClCompile Include="temperature.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
