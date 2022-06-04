@@ -30,7 +30,13 @@
     <ClCompile Include="q31_3.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="temperature.cpp">
+    <ClCompile Include="tempvector.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="temparray.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="sample_datatype.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

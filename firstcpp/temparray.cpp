@@ -6,40 +6,36 @@
 using namespace std;
 
 //methods to get input: getID(), getName(), getTemp()
-vector<string> getID() {
-	vector<string> input(5);
+string* getID(string* sID) {
 	cout << "-----------Input of Station ID----------" << endl;
 	for (int i = 0; i < 5; i++) {
 		cout << "Enter station ID: ";
-		cin >> input[i];
+		cin >> sID[i];
 	}
-	return input;
+	return sID;
 }
 
-vector<string> getName(vector<string> sID) {
-	vector<string> input(5);
+string* getName(string* sName, string* sID) {
 	cout << "-----------Input of Station Name----------" << endl;
 	for (int i = 0; i < 5; i++) {
 		cout << "Enter station Name for " << sID[i] << ": " << endl;
 		cin.ignore(); //ignore one input, or else it skips one input.
-		getline(cin, input[i]);
+		getline(cin, sName[i]);
 	}
-	return input;
+	return sName;
 }
 
-vector<double> getTemp(vector<string> sName) {
-	vector<double> input(5);
+double* getTemp(double* fahr, string* sName) {
 	cout << "-------Input of Temperature in Fahrenheit--------" << endl;
 	for (int i = 0; i < 5; i++) {
 		cout << "Enter temperature for " << sName[i] << ": ";
-		cin >> input[i];
+		cin >> fahr[i];
 	}
-	return input;
+	return fahr;
 }
 
 //conversion method fr Fahrenheit to Celsius
-vector<double> getCelsius(vector<double> frh) {
-	vector<double> cels(5);
+double* getCelsius(double* cels, double* frh) {
 	for (int i = 0; i < 5; i++) {
 		cels[i] = (frh[i] - 32) * 5 / 9;
 	}
@@ -47,7 +43,7 @@ vector<double> getCelsius(vector<double> frh) {
 }
 
 //calculation method to get average
-double getAvg(vector<double> cels) {
+double getAvg(double* cels) {
 	double avg, sum = 0;
 	for (int i = 0; i < 5; i++) {
 		sum = sum + cels[i];
@@ -57,7 +53,7 @@ double getAvg(vector<double> cels) {
 }
 
 //report methods report(), minmaxavg()
-void report(vector<string> sID, vector<string> sName, vector<double> cels) {
+void report(string* sID, string* sName, double* cels) {
 	cout << "\n-------------Input Summary------------------" << endl;
 	cout << left << setw(7) << "ID" << setw(15) << "Name" << setw(7) << "Temperature(C)" << endl;
 	for (int i = 0; i < 5; i++) {
@@ -66,7 +62,7 @@ void report(vector<string> sID, vector<string> sName, vector<double> cels) {
 }
 
 void minmaxavg(vector<string> maxName, vector<string> minName, vector<string> maxID, vector<string> minID,
-			   vector<int> maxindex, vector<int> minindex, double avg, double maxTemp, double minTemp) {
+	vector<int> maxindex, vector<int> minindex, double avg, double maxTemp, double minTemp) {
 
 	cout << "The average temperature is: " << fixed << setprecision(2) << avg << endl;;
 	cout << "Stations with minimum temperatures: " << endl;
@@ -80,7 +76,7 @@ void minmaxavg(vector<string> maxName, vector<string> minName, vector<string> ma
 }
 
 //search method
-void search(vector<string> stationID, vector<string> stationName, vector<double> fahrenheit, vector<double> celsius) {
+void search(string* stationID, string* stationName, double* fahrenheit, double* celsius) {
 	cout << "================ Station ID search ====================" << endl;
 	string yesno, target;
 	do {
@@ -90,10 +86,12 @@ void search(vector<string> stationID, vector<string> stationName, vector<double>
 			if (yesno == "N") {
 				cout << "OK. System will exit now.\nAll temperatures processed.";
 				return;
-			} else if (yesno == "Y") {
+			}
+			else if (yesno == "Y") {
 				continue;
-			} else {
-				cout << "Invalid input! Please input again."<< endl;
+			}
+			else {
+				cout << "Invalid input! Please input again." << endl;
 			}
 		} while (!(yesno == "Y" || yesno == "N"));
 
@@ -111,9 +109,9 @@ void search(vector<string> stationID, vector<string> stationName, vector<double>
 				tgtName = stationName[n];
 				tgtIndex = n;
 				found = true;
-				
+
 				cout << "Target found. Displaying..." << endl;
-				cout << left << setw(4) << tgtIndex << setw(7) << tgtID << setw(15) << tgtName 
+				cout << left << setw(4) << tgtIndex << setw(7) << tgtID << setw(15) << tgtName
 					<< setw(7) << right << fixed << setprecision(2) << tgtCels << " (C)" << setw(7) << tgtFahr << " (F)" << endl;
 			}
 		}
@@ -123,21 +121,27 @@ void search(vector<string> stationID, vector<string> stationName, vector<double>
 	} while (true); //loops back to line 85
 }
 
-int main() {
+string* stationID = new string[5];
+string* stationName = new string[5];
+double* fahrenheit = new double[5];
+double* celsius = new double[5];
+double average;
+
+int temparray() {
 	//array and variable inits
-	vector<string> stationID = getID();
-	vector<string> stationName = getName(stationID);
-	vector<double> fahrenheit = getTemp(stationName);
-	vector<double> celsius = getCelsius(fahrenheit);
-	double average = getAvg(celsius);
+	stationID = getID(stationID);
+	stationName = getName(stationName, stationID);
+	fahrenheit = getTemp(fahrenheit, stationName);
+	celsius = getCelsius(celsius, fahrenheit);
+	average = getAvg(celsius);
 
 	//get max, min as it involves
 	//too many things to be put in its own method
-	double maxTemp = celsius.front();
-	double minTemp = celsius.front();
+	double maxTemp = celsius[0];
+	double minTemp = celsius[0];
 	vector<string> maxName, minName, maxID, minID;
 	vector<int> maxIndex, minIndex;
-	
+
 	for (int m = 0; m < 5; m++) {
 		if (celsius[m] > maxTemp) {
 			maxTemp = celsius[m];
@@ -163,4 +167,6 @@ int main() {
 	report(stationID, stationName, celsius);
 	minmaxavg(maxName, minName, maxID, minID, maxIndex, minIndex, average, maxTemp, minTemp);
 	search(stationID, stationName, fahrenheit, celsius);
+
+	return 0;
 } //endmain
