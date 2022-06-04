@@ -132,9 +132,10 @@
     <ClCompile Include="q22_4.cpp" />
     <ClCompile Include="q31_2.cpp" />
     <ClCompile Include="q31_3.cpp" />
-    <ClCompile Include="sample_datatype.cpp" />
+    <ClCompile Include="q71_1.cpp" />
     <ClCompile Include="temparray.cpp" />
     <ClCompile Include="tempvector.cpp" />
+    <ClCompile Include="variables_and_datatypes.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

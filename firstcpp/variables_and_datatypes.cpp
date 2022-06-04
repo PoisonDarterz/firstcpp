@@ -6,7 +6,7 @@ int sample_datatype() {
     int fav_number = 10;
     double decimal = 2.718;
     char fav_alphabet = 'A';
-    std::string fav_message = "Hello World";
+    std::string fav_message = "Hello World";  //std:: is needed here as it is not a primitive datatype and called from the <string> library.
     bool is_married = false;
 
     const double PI = 3.14159263;

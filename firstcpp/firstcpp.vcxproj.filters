@@ -36,7 +36,10 @@
     <ClCompile Include="temparray.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="sample_datatype.cpp">
+    <ClCompile Include="variables_and_datatypes.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="q71_1.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
