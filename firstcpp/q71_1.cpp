@@ -25,4 +25,5 @@ int q71_1() {
 	nums = getInput(nums);
 	int sum = getSum(nums);
 	output(sum);
+	return 0;
 }
