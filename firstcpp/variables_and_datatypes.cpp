@@ -1,7 +1,7 @@
 #include <iostream> //must include to use cout/cin.
 #include <string> //must include to use strings
 
-int main() {
+int v_and_d() {
 
     // Declare and initialise variables
     int fav_number = 10;

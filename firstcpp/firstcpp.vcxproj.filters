@@ -13,34 +13,52 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Source Files\basics">
+      <UniqueIdentifier>{6686345a-29ca-4d6d-80b5-73a2c761d585}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\w3resources">
+      <UniqueIdentifier>{46c5cfa2-1b4e-4cf7-ad07-6c1f82d75b09}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="conditionals.cpp">
+      <Filter>Source Files\basics</Filter>
+    </ClCompile>
     <ClCompile Include="firstcpp.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\basics</Filter>
     </ClCompile>
     <ClCompile Include="q22_2.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\basics</Filter>
     </ClCompile>
     <ClCompile Include="q22_4.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\basics</Filter>
     </ClCompile>
     <ClCompile Include="q31_2.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\basics</Filter>
     </ClCompile>
     <ClCompile Include="q31_3.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="tempvector.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="temparray.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="variables_and_datatypes.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\basics</Filter>
     </ClCompile>
     <ClCompile Include="q71_1.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\basics</Filter>
+    </ClCompile>
+    <ClCompile Include="temparray.cpp">
+      <Filter>Source Files\basics</Filter>
+    </ClCompile>
+    <ClCompile Include="tempvector.cpp">
+      <Filter>Source Files\basics</Filter>
+    </ClCompile>
+    <ClCompile Include="variables_and_datatypes.cpp">
+      <Filter>Source Files\basics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\w3resource\w3resource\other_qs.cpp">
+      <Filter>Source Files\w3resources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\w3resource\w3resource\q1_q10.cpp">
+      <Filter>Source Files\w3resources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\w3resource\w3resource\q11_q16.cpp">
+      <Filter>Source Files\w3resources</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
