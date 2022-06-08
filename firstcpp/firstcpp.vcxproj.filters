@@ -21,43 +21,43 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="conditionals.cpp">
+    <ClCompile Include="basics\conditionals.cpp">
       <Filter>Source Files\basics</Filter>
     </ClCompile>
-    <ClCompile Include="firstcpp.cpp">
+    <ClCompile Include="basics\firstcpp.cpp">
       <Filter>Source Files\basics</Filter>
     </ClCompile>
-    <ClCompile Include="q22_2.cpp">
+    <ClCompile Include="basics\q22_2.cpp">
       <Filter>Source Files\basics</Filter>
     </ClCompile>
-    <ClCompile Include="q22_4.cpp">
+    <ClCompile Include="basics\q22_4.cpp">
       <Filter>Source Files\basics</Filter>
     </ClCompile>
-    <ClCompile Include="q31_2.cpp">
+    <ClCompile Include="basics\q31_2.cpp">
       <Filter>Source Files\basics</Filter>
     </ClCompile>
-    <ClCompile Include="q31_3.cpp">
+    <ClCompile Include="basics\q31_3.cpp">
       <Filter>Source Files\basics</Filter>
     </ClCompile>
-    <ClCompile Include="q71_1.cpp">
+    <ClCompile Include="basics\q71_1.cpp">
       <Filter>Source Files\basics</Filter>
     </ClCompile>
-    <ClCompile Include="temparray.cpp">
+    <ClCompile Include="basics\temparray.cpp">
       <Filter>Source Files\basics</Filter>
     </ClCompile>
-    <ClCompile Include="tempvector.cpp">
+    <ClCompile Include="basics\tempvector.cpp">
       <Filter>Source Files\basics</Filter>
     </ClCompile>
-    <ClCompile Include="variables_and_datatypes.cpp">
+    <ClCompile Include="basics\variables_and_datatypes.cpp">
       <Filter>Source Files\basics</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\w3resource\w3resource\other_qs.cpp">
+    <ClCompile Include="w3resources\other_qs.cpp">
       <Filter>Source Files\w3resources</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\w3resource\w3resource\q1_q10.cpp">
+    <ClCompile Include="w3resources\q1_q10.cpp">
       <Filter>Source Files\w3resources</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\w3resource\w3resource\q11_q16.cpp">
+    <ClCompile Include="w3resources\q11_q16.cpp">
       <Filter>Source Files\w3resources</Filter>
     </ClCompile>
   </ItemGroup>
