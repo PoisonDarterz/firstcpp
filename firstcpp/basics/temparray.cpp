@@ -168,5 +168,6 @@ int temparray() {
 	minmaxavg(maxName, minName, maxID, minID, maxIndex, minIndex, average, maxTemp, minTemp);
 	search(stationID, stationName, fahrenheit, celsius);
 
+	delete stationID, stationName, fahrenheit, celsius;
 	return 0;
 } //endmain

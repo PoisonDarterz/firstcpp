@@ -60,5 +60,11 @@
     <ClCompile Include="w3resources\q11_q16.cpp">
       <Filter>Source Files\w3resources</Filter>
     </ClCompile>
+    <ClCompile Include="exercises\functions.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="exercises\pointers.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

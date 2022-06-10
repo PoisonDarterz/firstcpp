@@ -2,7 +2,7 @@
 #include <algorithm>
 #include <vector>
 
-int main() {
+int other_qs() {
 	//q30
 	double q30a, q30b, q30c, q30d, q30x, q30y;
 	std::cout << "Input 2 numbers seperated by space: ";
