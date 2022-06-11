@@ -19,12 +19,11 @@ void ptrexer2(int* arr, int n){
 	std::cout << "The maximum value is: " << max << " at address " << addmax << std::endl;
 }
 
-int main() {
+int pointer() { //main
 	std::cout << "Enter 2 integers seperated by a space: " << std::endl;
 	int ptrx, ptry;
 	std::cin >> ptrx >> ptry;
 	ptrexer1(ptrx, ptry);
-	return 0;
 
 	std::cout << "Enter number of values: ";
 	int n;
@@ -35,4 +34,6 @@ int main() {
 		std::cin >> ptrarr[i];
 	}
 	ptrexer2(ptrarr, n);
+
+	return 0;
 }
