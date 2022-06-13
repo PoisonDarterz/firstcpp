@@ -65,7 +65,7 @@ public:
 	}
 };
 
-int main() {
+int oop() { //main
 	//q1
 	Triangle tri;
 	Rectangle rec;
@@ -94,4 +94,6 @@ int main() {
 	dol.set_value(oop_n, oop_a);
 	zeb.display();
 	dol.display();
+
+	return 0;
 }

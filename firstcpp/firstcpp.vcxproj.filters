@@ -72,5 +72,8 @@
     <ClCompile Include="erle_exercises\oop.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="further_exercises\condor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
