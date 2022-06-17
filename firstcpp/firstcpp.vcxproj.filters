@@ -75,5 +75,8 @@
     <ClCompile Include="further_exercises\condor.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="basics\tempclass.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

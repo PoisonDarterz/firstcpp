@@ -53,7 +53,7 @@ double getAvg(double* cels) {
 }
 
 //report methods report(), minmaxavg()
-void report(string* sID, string* sName, double* cels) {
+void report2(string* sID, string* sName, double* cels) {
 	cout << "\n-------------Input Summary------------------" << endl;
 	cout << left << setw(7) << "ID" << setw(15) << "Name" << setw(7) << "Temperature(C)" << endl;
 	for (int i = 0; i < 5; i++) {
@@ -61,7 +61,7 @@ void report(string* sID, string* sName, double* cels) {
 	}
 }
 
-void minmaxavg(vector<string> maxName, vector<string> minName, vector<string> maxID, vector<string> minID,
+void minmaxavg2(vector<string> maxName, vector<string> minName, vector<string> maxID, vector<string> minID,
 	vector<int> maxindex, vector<int> minindex, double avg, double maxTemp, double minTemp) {
 
 	cout << "The average temperature is: " << fixed << setprecision(2) << avg << endl;;
@@ -164,8 +164,8 @@ int temparray() {
 	}
 	//end minmax
 
-	report(stationID, stationName, celsius);
-	minmaxavg(maxName, minName, maxID, minID, maxIndex, minIndex, average, maxTemp, minTemp);
+	report2(stationID, stationName, celsius);
+	minmaxavg2(maxName, minName, maxID, minID, maxIndex, minIndex, average, maxTemp, minTemp);
 	search(stationID, stationName, fahrenheit, celsius);
 
 	delete stationID, stationName, fahrenheit, celsius;

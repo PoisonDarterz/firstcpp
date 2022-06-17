@@ -11,7 +11,7 @@ int countEven(int* arr, int n) { //q6
 	return count;
 }
 
-int main() {
+int condor() { //main
 	//q5
 	char s[10] = "abcde";
 	char* cptr;
