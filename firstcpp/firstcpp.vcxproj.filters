@@ -60,10 +60,22 @@
     <ClCompile Include="w3resources\q11_q16.cpp">
       <Filter>Source Files\w3resources</Filter>
     </ClCompile>
-    <ClCompile Include="exercises\functions.cpp">
+    <ClCompile Include="erle_exercises\functions.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="exercises\pointers.cpp">
+    <ClCompile Include="erle_exercises\pointers.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="erle_exercises\classes.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="erle_exercises\oop.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="further_exercises\condor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="basics\tempclass.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

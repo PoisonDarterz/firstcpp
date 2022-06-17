@@ -26,12 +26,15 @@
     <ClCompile Include="basics\q31_2.cpp" />
     <ClCompile Include="basics\q31_3.cpp" />
     <ClCompile Include="basics\q71_1.cpp" />
+    <ClCompile Include="basics\tempclass.cpp" />
     <ClCompile Include="basics\temparray.cpp" />
     <ClCompile Include="basics\tempvector.cpp" />
     <ClCompile Include="basics\variables_and_datatypes.cpp" />
-    <ClCompile Include="exercises\functions.cpp" />
-    <ClCompile Include="exercises\pointers.cpp" />
-    <ClCompile Include="exercises\classes.cpp" />
+    <ClCompile Include="erle_exercises\functions.cpp" />
+    <ClCompile Include="erle_exercises\pointers.cpp" />
+    <ClCompile Include="erle_exercises\classes.cpp" />
+    <ClCompile Include="erle_exercises\oop.cpp" />
+    <ClCompile Include="further_exercises\condor.cpp" />
     <ClCompile Include="w3resources\other_qs.cpp" />
     <ClCompile Include="w3resources\q11_q16.cpp" />
     <ClCompile Include="w3resources\q1_q10.cpp" />
@@ -41,7 +44,7 @@
     <Keyword>Win32Proj</Keyword>
     <ProjectGuid>{3b896510-0615-438a-87a9-05468b19e856}</ProjectGuid>
     <RootNamespace>firstcpp</RootNamespace>
-    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">

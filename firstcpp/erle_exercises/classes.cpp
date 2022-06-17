@@ -45,7 +45,7 @@ public:
 	}
 };
 
-int main() {
+int classes() { //main
 	//q1
 	Rectangle rect;
 	std::cout << "Enter width and length of rectangle, seperated by a space: " << std::endl;
@@ -73,4 +73,6 @@ int main() {
 	double avg = stud.calc_avg();
 	stud.disp(avg);
 	std::cout << std::endl;
+
+	return 0;
 }
