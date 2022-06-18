@@ -8,7 +8,7 @@ public:
 	std::string sName[5];
 	std::string sID[5];
 
-	void getStation(std::string* sN, std::string* sI) {
+	void setStation(std::string* sN, std::string* sI) {
 		for (auto i = 0; i < 5; i++) {
 			std::cout << "Enter the station ID: ";
 			std::cin >> sI[i];
@@ -26,7 +26,7 @@ public:
 	double fahrenheit[5];
 	double avg;
 
-	void getTemp(double* c, double* f, double* avg){
+	void setTemp(double* c, double* f, double* avg){
 		double sum = 0.0;
 		for(auto i = 0; i < 5; i++) {
 			std::cout << "Enter the temperature in Fahrenheit: ";
@@ -62,17 +62,17 @@ void minmaxavg(std::vector<std::string> maxName, std::vector<std::string> minNam
 	std::cout << std::endl;
 }
 
-int main() {
+int tempclass() { //main
 	Station sta;
 	std::string* sN = &sta.sName[0];
 	std::string* sI = &sta.sID[0];
-	sta.getStation(sN, sI);
+	sta.setStation(sN, sI);
 
 	Temperature temp;
 	double* c = &temp.celsius[0];
 	double* f = &temp.fahrenheit[0];
 	double* a = &temp.avg;
-	temp.getTemp(c, f, a);
+	temp.setTemp(c, f, a);
 
 	std::vector<std::string> maxName, minName, maxID, minID;
 	std::vector<int> maxIndex, minIndex;

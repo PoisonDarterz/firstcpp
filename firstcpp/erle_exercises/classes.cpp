@@ -2,8 +2,10 @@
 #include <string>
 
 class Rectangle { //q1
-public:
+private:
 	double wid,len;
+	
+public:
 	void getwl() {
 		std::cin >> wid >> len;
 	}
@@ -13,8 +15,10 @@ public:
 };
 
 class Addition { //q2
-public:
+private:
 	int cla1=0, cla2=0;
+	
+public:
 	Addition(int cla_x, int cla_y) {
 		cla1 = cla_x;
 		cla2 = cla_y;
@@ -26,10 +30,11 @@ public:
 };
 
 class Student { //q3
-public:
+private:
 	std::string name;
 	int marks1, marks2;
 	
+public:
 	Student(std::string n, int m1, int m2) {
 		name = n;
 		marks1 = m1;
