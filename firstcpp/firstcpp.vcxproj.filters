@@ -78,5 +78,14 @@
     <ClCompile Include="basics\tempclass.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="further_exercises\p_class_1.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="further_exercises\p_class_2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="further_exercises\q_class_3.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
