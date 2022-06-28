@@ -19,7 +19,7 @@ public:
 
 ZooAnimal::ZooAnimal(char* n, int cn, int wd, int w) {
 	name = new char[strlen(n) + 1];
-	strcpy(name, n);
+	strcpy_s(name, (strlen(n) + 1 * sizeof(char)), n);
 	cageNumber = cn;
 	weightDate = wd;
 	weight = w;
@@ -46,7 +46,7 @@ public:
 
 LargeAnimal::LargeAnimal(char* n, int cn, int wd, int w, float c) : ZooAnimal(n, cn, wd, w) {
 	species = new char[strlen(n) + 1];
-	strcpy(species, n);
+	strcpy_s(species, (strlen(n) + 1 * sizeof(char)), n);
 	cageMinimumVolume = c;
 }
 
@@ -54,7 +54,7 @@ char* LargeAnimal::reptName() {
     return species;
 }
 
-int main() {
+int p_class_3() {
     ZooAnimal bozo((char*)"abc", 1, 123, 100);
     LargeAnimal gonzo((char*)"def", 2, 456, 300, 10.0);
 	

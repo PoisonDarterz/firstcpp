@@ -26,6 +26,7 @@
     <ClCompile Include="basics\q31_2.cpp" />
     <ClCompile Include="basics\q31_3.cpp" />
     <ClCompile Include="basics\q71_1.cpp" />
+    <ClCompile Include="basics\input_and_output.cpp" />
     <ClCompile Include="basics\tempclass.cpp" />
     <ClCompile Include="basics\temparray.cpp" />
     <ClCompile Include="basics\tempvector.cpp" />
@@ -37,7 +38,7 @@
     <ClCompile Include="further_exercises\condor.cpp" />
     <ClCompile Include="further_exercises\p_class_1.cpp" />
     <ClCompile Include="further_exercises\p_class_2.cpp" />
-    <ClCompile Include="further_exercises\q_class_3.cpp" />
+    <ClCompile Include="further_exercises\p_class_3.cpp" />
     <ClCompile Include="w3resources\other_qs.cpp" />
     <ClCompile Include="w3resources\q11_q16.cpp" />
     <ClCompile Include="w3resources\q1_q10.cpp" />

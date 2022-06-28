@@ -2,11 +2,17 @@
 //
 
 #include <iostream>
-
+#include <string>
 
 int firstcpp() {
-    std::cout << "Hello World!" << std::endl;
-    return 0;
+    std::string phrase;
+    int x, y;
+
+    std::cout << "Enter 2 numbers seperated by space: ";
+    std::cin >> x >> y;
+    std::cout << "Enter a sentence: ";
+    std::cin.ignore();
+    getline(std::cin, phrase);
 }
 
 
