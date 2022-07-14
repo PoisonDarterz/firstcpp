@@ -13,6 +13,8 @@ int firstcpp() {
     std::cout << "Enter a sentence: ";
     std::cin.ignore();
     getline(std::cin, phrase);
+
+    return 0;
 }
 
 
