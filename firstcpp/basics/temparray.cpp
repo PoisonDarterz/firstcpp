@@ -76,7 +76,7 @@ void minmaxavg2(vector<string> maxName, vector<string> minName, vector<string> m
 }
 
 //search method
-void search(string* stationID, string* stationName, double* fahrenheit, double* celsius) {
+void search2(string* stationID, string* stationName, double* fahrenheit, double* celsius) {
 	cout << "================ Station ID search ====================" << endl;
 	string yesno, target;
 	do {
@@ -166,7 +166,7 @@ int temparray() {
 
 	report2(stationID, stationName, celsius);
 	minmaxavg2(maxName, minName, maxID, minID, maxIndex, minIndex, average, maxTemp, minTemp);
-	search(stationID, stationName, fahrenheit, celsius);
+	search2(stationID, stationName, fahrenheit, celsius);
 
 	delete stationID, stationName, fahrenheit, celsius;
 	return 0;

@@ -66,6 +66,52 @@ void minmaxavg(std::vector<std::string> maxName, std::vector<std::string> minNam
 	std::cout << std::endl;
 }
 
+void search(std::string* stationID, std::string* stationName, double* fahrenheit, double* celsius) {
+	std::cout << "================ Station ID search ====================" << std::endl;
+	std::string yesno, target;
+	do {
+		do { //this loop checks for valid input of yes or no.
+			std::cout << "Search by station ID? (Y/N) : ";
+			std::cin >> yesno;
+			if (yesno == "N") {
+				std::cout << "OK. System will exit now.\nAll temperatures processed.";
+				return;
+			}
+			else if (yesno == "Y") {
+				continue;
+			}
+			else {
+				std::cout << "Invalid input! Please input again." << std::endl;
+			}
+		} while (!(yesno == "Y" || yesno == "N"));
+
+		std::cout << "Enter search station ID: ";
+		std::cin >> target;
+		bool found = false;
+		int tgtIndex;
+		std::string tgtID, tgtName;
+		double tgtFahr, tgtCels;
+		for (int n = 0; n < 5; n++) {
+			if (stationID[n] == target) {
+				tgtCels = celsius[n];
+				tgtFahr = fahrenheit[n];
+				tgtID = stationID[n];
+				tgtName = stationName[n];
+				tgtIndex = n;
+				found = true;
+
+				std::cout << "Target found. Displaying..." << std::endl;
+				//std::cout << std::left << std::setw(4) << tgtIndex << std::setw(7) << tgtID << std::setw(15) << tgtName
+					//<< std::setw(7) << std::right << std::fixed << std::setprecision(2) << tgtCels << " (C)" << std::setw(7) << tgtFahr << " (F)" << std::endl;
+				printf("%-4s %-7s %-15s %-7.2f (C) %-7.2f (F)", std::to_string(tgtIndex).c_str(), tgtID.c_str(), tgtName.c_str(), tgtCels, tgtFahr);
+			}
+		}
+		if (!found) {
+			std::cout << "No record for station ID " << target << std::endl;
+		}
+	} while (true); //loops back to line 85
+}
+
 int main() { //main
 	Station sta;
 	std::string* sN = &sta.sName[0];
@@ -107,5 +153,6 @@ int main() { //main
 	
 	report(sta.sID, sta.sName, temp.celsius);
 	minmaxavg(maxName, minName, maxID, minID, maxIndex, minIndex, temp.avg, maxTemp, minTemp);
+	search(sta.sID, sta.sName, temp.fahrenheit, temp.celsius);
 	return 0;
 }
