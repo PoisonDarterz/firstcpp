@@ -40,9 +40,11 @@ public:
 
 void report(std::string* sID, std::string* sName, double* cels) {
 	std::cout << "\n-------------Input Summary------------------" << std::endl;
-	std::cout << std::left << std::setw(7) << "ID" << std::setw(15) << "Name" << std::setw(7) << "Temperature(C)" << std::endl;
+	//std::cout << std::left << std::setw(7) << "ID" << std::setw(15) << "Name" << std::setw(7) << "Temperature(C)" << std::endl;
+	printf("%-7s %-15s %-7s\n", "ID", "Name", "Temperature(C)");
 	for (int i = 0; i < 5; i++) {
-		std::cout << std::left << std::setw(7) << sID[i] << std::setw(15) << sName[i] << std::setw(7) << std::fixed << std::setprecision(2) << cels[i] << std::endl;
+		//std::cout << std::left << std::setw(7) << sID[i] << std::setw(15) << sName[i] << std::setw(7) << std::fixed << std::setprecision(2) << cels[i] << std::endl;
+		printf("%-7s %-15s %-7.2f\n", sID[i].c_str(), sName[i].c_str(), cels[i]);
 	}
 	std::cout << std::endl;
 }
@@ -53,16 +55,18 @@ void minmaxavg(std::vector<std::string> maxName, std::vector<std::string> minNam
 	std::cout << "The average temperature is: " << std::fixed << std::setprecision(2) << avg << std::endl;;
 	std::cout << "Stations with minimum temperatures: " << std::endl;
 	for (int i = 0; i < minindex.size(); i++) {
-		std::cout << std::left << std::setw(7) << minID[i] << std::setw(15) << minName[i] << std::setw(7) << std::fixed << std::setprecision(2) << minTemp << std::endl;
+		//std::cout << std::left << std::setw(7) << minID[i] << std::setw(15) << minName[i] << std::setw(7) << std::fixed << std::setprecision(2) << minTemp << std::endl;
+		printf("%-7s %-15s %-7.2f\n", minID[i].c_str(), minName[i].c_str(), minTemp);
 	}
 	std::cout << "Stations with maximum temperatures: " << std::endl;
 	for (int j = 0; j < maxindex.size(); j++) {
-		std::cout << std::left << std::setw(7) << maxID[j] << std::setw(15) << maxName[j] << std::setw(7) << std::fixed << std::setprecision(2) << maxTemp << std::endl;
+		//std::cout << std::left << std::setw(7) << maxID[j] << std::setw(15) << maxName[j] << std::setw(7) << std::fixed << std::setprecision(2) << maxTemp << std::endl;
+		printf("%-7s %-15s %-7.2f\n", maxID[j].c_str(), maxName[j].c_str(), maxTemp);
 	}
 	std::cout << std::endl;
 }
 
-int tempclass() { //main
+int main() { //main
 	Station sta;
 	std::string* sN = &sta.sName[0];
 	std::string* sI = &sta.sID[0];

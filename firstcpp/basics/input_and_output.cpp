@@ -1,7 +1,7 @@
 #include <iostream>
 #include <string>
 
-int main() {
+int io() { //main
 	// Output Example
     std::string phrase = "End program.";
     std::cout << "Hello World! ";
