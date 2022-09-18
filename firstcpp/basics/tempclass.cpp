@@ -20,15 +20,15 @@ public:
 	}
 };
 
-class Temperature{
+class Temperature {
 public:
 	double celsius[5];
 	double fahrenheit[5];
 	double avg;
 
-	void setTemp(double* c, double* f, double* avg){
+	void setTemp(double* c, double* f, double* avg) {
 		double sum = 0.0;
-		for(auto i = 0; i < 5; i++) {
+		for (auto i = 0; i < 5; i++) {
 			std::cout << "Enter the temperature in Fahrenheit: ";
 			std::cin >> f[i];
 			c[i] = (f[i] - 32) * 5 / 9;
@@ -102,7 +102,7 @@ void search(std::string* stationID, std::string* stationName, double* fahrenheit
 
 				std::cout << "Target found. Displaying..." << std::endl;
 				//std::cout << std::left << std::setw(4) << tgtIndex << std::setw(7) << tgtID << std::setw(15) << tgtName
-					//<< std::setw(7) << std::right << std::fixed << std::setprecision(2) << tgtCels << " (C)" << std::setw(7) << tgtFahr << " (F)" << std::endl;
+				//<< std::setw(7) << std::right << std::fixed << std::setprecision(2) << tgtCels << " (C)" << std::setw(7) << tgtFahr << " (F)" << std::endl;
 				printf("%-4s %-7s %-15s %-7.2f (C) %-7.2f (F)", std::to_string(tgtIndex).c_str(), tgtID.c_str(), tgtName.c_str(), tgtCels, tgtFahr);
 			}
 		}
@@ -112,7 +112,7 @@ void search(std::string* stationID, std::string* stationName, double* fahrenheit
 	} while (true); //loops back to line 85
 }
 
-int main() { //main
+int tempclass() { //main
 	Station sta;
 	std::string* sN = &sta.sName[0];
 	std::string* sI = &sta.sID[0];
@@ -150,7 +150,7 @@ int main() { //main
 			minIndex.push_back(n);
 		}
 	}
-	
+
 	report(sta.sID, sta.sName, temp.celsius);
 	minmaxavg(maxName, minName, maxID, minID, maxIndex, minIndex, temp.avg, maxTemp, minTemp);
 	search(sta.sID, sta.sName, temp.fahrenheit, temp.celsius);

@@ -40,8 +40,8 @@
     <ClCompile Include="further_exercises\p_class_2.cpp" />
     <ClCompile Include="further_exercises\p_class_3.cpp" />
     <ClCompile Include="w3resources\other_qs.cpp" />
-    <ClCompile Include="w3resources\q11_q16.cpp" />
-    <ClCompile Include="w3resources\q1_q10.cpp" />
+    <ClCompile Include="w3resources\algo_q1_q.cpp" />
+    <ClCompile Include="w3resources\q1_q16.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>

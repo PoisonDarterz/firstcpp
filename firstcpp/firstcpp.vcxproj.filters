@@ -54,10 +54,10 @@
     <ClCompile Include="w3resources\other_qs.cpp">
       <Filter>Source Files\w3resources</Filter>
     </ClCompile>
-    <ClCompile Include="w3resources\q1_q10.cpp">
+    <ClCompile Include="w3resources\q1_q16.cpp">
       <Filter>Source Files\w3resources</Filter>
     </ClCompile>
-    <ClCompile Include="w3resources\q11_q16.cpp">
+    <ClCompile Include="w3resources\algo_q1_q.cpp">
       <Filter>Source Files\w3resources</Filter>
     </ClCompile>
     <ClCompile Include="erle_exercises\functions.cpp">
