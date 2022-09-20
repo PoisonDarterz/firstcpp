@@ -127,7 +127,7 @@ double* fahrenheit = new double[5];
 double* celsius = new double[5];
 double average;
 
-int temparray() {
+int temparray() { //main
 	//array and variable inits
 	stationID = getID(stationID);
 	stationName = getName(stationName, stationID);

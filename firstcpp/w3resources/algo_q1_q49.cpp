@@ -2,7 +2,21 @@
 #include <iomanip>
 #include <cmath>
 
-int main() { //main
+void q35(int* arr, int arrSize) {
+	
+	int count = 0;
+	
+	for (int i = 0; i < arrSize - 1; i++) {
+		if (arr[i] == 5 && (arr[i + 1] == 5 || arr[i + 1] == 6)) {
+			count++;
+		}
+	}
+	
+	std::cout << count << std::endl;
+}
+
+
+int algo_q1_q49() { //main
 	// q2
 	int q2a[3], q2b[3];
 	for (int i = 0; i < 3; i++) {
@@ -77,5 +91,58 @@ int main() { //main
 	std::cout << std::boolalpha << q23 << std::endl;
 	std::cout << std::endl;
 
+	//q35
+	int q35a[] = { 5, 5, 2 };
+	int q35b[] = { 5, 5, 2, 5, 5 };
+	int q35c[] = { 5, 6, 2, 9 };
+
+	int q35asize = sizeof(q35a) / sizeof(int);
+	int q35bsize = sizeof(q35b) / sizeof(int);
+	int q35csize = sizeof(q35c) / sizeof(int);
+
+	int* q35ap = &q35a[0];
+	int* q35bp = &q35b[0];
+	int* q35cp = &q35c[0];
+
+	q35(q35ap, q35asize);
+	q35(q35bp, q35bsize);
+	q35(q35cp, q35csize);
+
+	std::cout << std::endl;
+
+	//q38
+	int q38a, q38b;
+	std::cout << "Enter 2 numbers separated by space: " << std::endl;
+	std::cin >> q38a >> q38b;
+	bool q38 = false;
+	if ((q38a == 5) || (q38b == 5) || ((q38a + q38b) == 5) || (abs(q38a - q38b) == 5)) {
+		q38 = true;
+	}
+	std::cout << std::boolalpha << q38 << std::endl;
+	std::cout << std::endl;
+	
+	//q49
+	int q49a, q49b, q49l;
+	std::cout << "Enter 2 numbers separated by space: " << std::endl;
+	std::cin >> q49a >> q49b;
+	if (q49a > q49b) {
+		q49l = q49a;
+	} else {
+		q49l = q49b;
+	}
+	if (q49a % 7 == q49b % 7) {
+		if (q49a > q49b) {
+			q49l = q49b;
+		} else {
+			q49l = q49a;
+		}
+	}
+	if (q49a == q49b) {
+		q49l = 0;
+	}
+	
+	std::cout << q49l << std::endl;
+	std::cout << std::endl;
+	
 	return 0;
 }
