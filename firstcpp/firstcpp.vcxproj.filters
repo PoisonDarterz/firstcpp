@@ -93,5 +93,8 @@
     <ClCompile Include="w3resources\algo_q55_q.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="basics\wix10021st.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

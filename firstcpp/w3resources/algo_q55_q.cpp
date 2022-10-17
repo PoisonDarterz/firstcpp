@@ -2,7 +2,7 @@
 #include <iomanip>
 #include <cmath>
 
-int main() { //main
+int algo_q55_q() { //main
 	//q55
 	int q55a, q55b;
 	std::cout << "Enter 2 numbers separated by space: " << std::endl;
@@ -16,5 +16,5 @@ int main() { //main
 	std::cout << q55 << std::endl;
 	std::cout << std::endl;
 		
-	
+	return 0;
 }

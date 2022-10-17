@@ -31,6 +31,7 @@
     <ClCompile Include="basics\temparray.cpp" />
     <ClCompile Include="basics\tempvector.cpp" />
     <ClCompile Include="basics\variables_and_datatypes.cpp" />
+    <ClCompile Include="basics\wix10021st.cpp" />
     <ClCompile Include="erle_exercises\functions.cpp" />
     <ClCompile Include="erle_exercises\pointers.cpp" />
     <ClCompile Include="erle_exercises\classes.cpp" />
