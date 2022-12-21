@@ -19,8 +19,10 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="basics\alex.cpp" />
     <ClCompile Include="basics\conditionals.cpp" />
     <ClCompile Include="basics\firstcpp.cpp" />
+    <ClCompile Include="basics\karweng.cpp" />
     <ClCompile Include="basics\q22_2.cpp" />
     <ClCompile Include="basics\q22_4.cpp" />
     <ClCompile Include="basics\q31_2.cpp" />

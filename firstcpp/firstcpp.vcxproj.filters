@@ -96,5 +96,11 @@
     <ClCompile Include="basics\wix10021st.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="basics\karweng.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="basics\alex.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

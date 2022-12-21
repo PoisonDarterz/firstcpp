@@ -18,7 +18,7 @@ int io() { //main
     std::string phrase2;
     int x, y;
 
-    std::cout << "Enter 2 numbers seperated by space: ";
+    std::cout << "Enter 2 numbers seperated by spacem ,: ";
     std::cin >> x >> y;                        // Example input: 4 5. The value 4 and 5 will be assigned to x and y respectively.
     int sum = x + y;
     std::cout << "The sum of the 2 numbers is: " << sum << std::endl;

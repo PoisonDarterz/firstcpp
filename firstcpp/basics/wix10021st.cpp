@@ -1,6 +1,6 @@
 #include <iostream>
 
-int main() { //main
+int wix1002() { //main
 	int n = 0;
 	int sum = 0;
 	while (n < 1) {
